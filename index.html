@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/global.css">
+  <link rel="stylesheet" href="/schedule.css">
+  <link rel="stylesheet" href="/progess.css">
+  <link rel="stylesheet" href="/timeline.css">
   <title>Document</title>
 </head>
 <body>
@@ -15,141 +18,321 @@
     </a>
   </nav>
   <div class="container">
-    <div class="row">
       
-      <section class="schedule mt-5 mb-5 pt-3 pb-3">
-        <div class="container">
-          <div class="row">
-            <div class="section-title mb-3">
-              <img src="./assets/calendar.svg" width="30" height="30" />
-              Bạn đã đặt lịch tham gia 4 buổi học
-            </div>
-            <div class="container">
-              <div class="d-flex section-detail flex-md-column flex-lg-row flex-wrap">
-                <div class="schedule-wrapper container col-xl-4 col-lg-4 col-12 p-3">
-                  <div class="d-flex">
-                    <div class="logo-object d-flex align-items-center justify-content-center">
-                      <img src="./assets/routine.svg" />
-                    </div>
-                    <div class="description-subject col">
-                      <div class="small-title-subject">
-                        Do you like street food do you like street food 
-                      </div>
-                      <div class="small-desc-subject d-flex align-items-center flex-lg-wrap">
-                        <div class="user d-flex align-items-center">
-                          <img src="./assets/teacher-ava.svg" />
-                          <div class="teacher-name">
-                            Serena
-                          </div>
-                        </div>
-                        <div class="status-subject confirmed">
-                          <img src="./assets/confirmed.svg" />
-                          Đã xác nhận
-                        </div>
-                      </div>
-                      <div class="time-subject">
-                        <img src="./assets/clock.svg" />
-                        11:30, Thứ 5
-                      </div>
-                    </div>
+    <!-- Section 1 -->
+    <section class="schedule mt-5 mb-5 pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="section-title mb-3">
+            <img src="./assets/calendar.svg" width="30" height="30" />
+            Bạn đã đặt lịch tham gia 4 buổi học
+          </div>
+          <div class="container">
+            <div class="d-flex section-detail flex-md-column flex-lg-row flex-wrap">
+              <div class="schedule-wrapper container col-xl-4 col-lg-4 col-12 p-3">
+                <div class="d-flex">
+                  <div class="logo-object d-flex align-items-center justify-content-center">
+                    <img src="./assets/routine.svg" />
                   </div>
-                  <div class="d-flex justify-content-end">
-                    <div class="button-start-study">
-                      Vào học
+                  <div class="description-subject col">
+                    <div class="small-title-subject">
+                      Do you like street food do you like street food 
+                    </div>
+                    <div class="small-desc-subject d-flex align-items-center flex-lg-wrap">
+                      <div class="user d-flex align-items-center">
+                        <img src="./assets/teacher-ava.svg" />
+                        <div class="teacher-name">
+                          Serena
+                        </div>
+                      </div>
+                      <div class="status-subject confirmed">
+                        <img src="./assets/confirmed.svg" />
+                        Đã xác nhận
+                      </div>
+                    </div>
+                    <div class="time-subject">
+                      <img src="./assets/clock.svg" />
+                      11:30, Thứ 5
                     </div>
                   </div>
                 </div>
-                <div class="schedule-wrapper col-sm col-12">
-                  <div class="table-wrapper">
-                      <table class="table table-borderless">
-                        <tbody>
-                          <tr>
-                            <th scope="row">Buổi 2</th>
-                            <td class="time-subject">
-                              <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
-                                <img src="./assets/clock.svg" />
-                                11:30, Thứ 5 tuần sau
-                              </div>
-                            </td>
-                            <td>
-                              <div class="small-desc-subject d-flex align-items-center">
-                                <div class="user d-flex align-items-center">
-                                  <img src="./assets/teacher-ava.svg" />
-                                  <div class="teacher-name">
-                                    Serena
-                                  </div>
-                                </div>
-                                <div class="status-subject confirmed">
-                                  <img src="./assets/confirmed.svg" />
-                                  Đã xác nhận
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="./assets/settings.svg" />
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Buổi 3</th>
-                            <td class="time-subject">
-                              <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
-                                <img src="./assets/clock.svg" />
-                                11:30, Thứ 5 tuần sau
-                              </div>
-                            </td>
-                            <td>
-                              <div class="small-desc-subject d-flex align-items-center">
-                                <div class="user d-flex align-items-center">
-                                  <img src="./assets/teacher-ava.svg" />
-                                  <div class="teacher-name">
-                                    Serena
-                                  </div>
-                                </div>
-                                <div class="status-subject wait-confirm">
-                                  Chờ xác nhận
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="./assets/settings.svg" />
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Buổi 4</th>
-                            <td class="time-subject">
-                              <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
-                                <img src="./assets/clock.svg" />
-                                11:30, Thứ 5 tuần sau
-                              </div>
-                            </td>
-                            <td>
-                              <div class="small-desc-subject d-flex align-items-center">
-                                <div class="user d-flex align-items-center">
-                                  <img src="./assets/teacher-ava.svg" />
-                                  <div class="teacher-name">
-                                    Serena
-                                  </div>
-                                </div>
-                                <div class="status-subject cancel">
-                                  Từ chối
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="./assets/settings.svg" />
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="d-flex justify-content-end">
+                  <div class="button-start-study">
+                    Vào học
                   </div>
+                </div>
+              </div>
+              <div class="schedule-wrapper col-sm col-12">
+                <div class="table-wrapper">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Buổi 2</th>
+                          <td class="time-subject">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                              <img src="./assets/clock.svg" />
+                              11:30, Thứ 5 tuần sau
+                            </div>
+                          </td>
+                          <td>
+                            <div class="small-desc-subject d-flex align-items-center">
+                              <div class="user d-flex align-items-center">
+                                <img src="./assets/teacher-ava.svg" />
+                                <div class="teacher-name">
+                                  Serena
+                                </div>
+                              </div>
+                              <div class="status-subject confirmed">
+                                <img src="./assets/confirmed.svg" />
+                                Đã xác nhận
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="./assets/settings.svg" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Buổi 3</th>
+                          <td class="time-subject">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                              <img src="./assets/clock.svg" />
+                              11:30, Thứ 5 tuần sau
+                            </div>
+                          </td>
+                          <td>
+                            <div class="small-desc-subject d-flex align-items-center">
+                              <div class="user d-flex align-items-center">
+                                <img src="./assets/teacher-ava.svg" />
+                                <div class="teacher-name">
+                                  Serena
+                                </div>
+                              </div>
+                              <div class="status-subject wait-confirm">
+                                Chờ xác nhận
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="./assets/settings.svg" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Buổi 4</th>
+                          <td class="time-subject">
+                            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                              <img src="./assets/clock.svg" />
+                              11:30, Thứ 5 tuần sau
+                            </div>
+                          </td>
+                          <td>
+                            <div class="small-desc-subject d-flex align-items-center">
+                              <div class="user d-flex align-items-center">
+                                <img src="./assets/teacher-ava.svg" />
+                                <div class="teacher-name">
+                                  Serena
+                                </div>
+                              </div>
+                              <div class="status-subject cancel">
+                                Từ chối
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="./assets/settings.svg" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </div>
+    <!-- Section 2 -->
+    <section class="progress-section">
+      <div class="container">
+          <div class="breadcrumb-custom">
+            <img src="./assets/arrow-left.svg" />
+            <span>
+              Beginner
+            </span>
+          </div>
+          <div class="head-section">
+            <img src="./assets/testtt.jpeg" class="img-head" />
+            <p class="beginner-title">Beginner 1</p>
+            <div class="progress-detail flex-wrap d-flex p-3">
+              <div class="target-study col-sm-12 col-md-10 col-12 d-flex">
+                <span class="target-text">Mục tiêu học</span>
+                <div class="custom-progress-bar flex-grow-1 d-flex">
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                  <div class="progress-item"></div>
+                </div>
+                <div class="counter">
+                  3/17
+                </div>
+              </div>
+              <div class="col d-flex justify-content-md-end justify-content-sm-start align-items-center">
+                <div class="more-detail">
+                  Chi tiết
+                  </div>
+                <img src="./assets/arrow-right.svg" />
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="timeline-section">
+      <div class="container">
+        <div class="timeline">
+          <div class="timeline-row right">
+            <div class="timeline-content lesson-done">
+                <div class="d-flex gap-1">
+                  <div class="d-flex flex-column col lesson-detail">
+                    <span class="lesson">Lesson 1</span>
+                    <div class="lesson-name">
+                      Should same-sex marriages be legalized in Vietnam?
+                    </div>
+                    <div class="user d-flex align-items-center">
+                      <img src="./assets/teacher-ava.svg" />
+                      <div class="teacher-name">
+                        Serena
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 img-lesson">
+                    <img src="./assets/lesson-1.svg" />
+                  </div>
+                </div>
+                <div class="lesson-footer d-flex justify-content-between">
+                  <div>Làm bài tập</div>
+                  <div>Tài liệu</div>
+                  <div>Học lại</div>
+                </div>
+            </div>
+          </div>
+          <div class="timeline-row left">
+            <div class="timeline-content lesson-done">
+                <div class="d-flex gap-1">
+                  <div class="d-flex flex-column col lesson-detail">
+                    <span class="lesson">Lesson 2</span>
+                    <div class="lesson-name">
+                      Should same-sex marriages be legalized in Vietnam?
+                    </div>
+                    <div class="user d-flex align-items-center">
+                      <img src="./assets/teacher-ava.svg" />
+                      <div class="teacher-name">
+                        Serena
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 img-lesson">
+                    <img src="./assets/lession-2.svg" />
+                  </div>
+                </div>
+                <div class="lesson-footer d-flex justify-content-between">
+                  <div>Làm bài tập</div>
+                  <div>Tài liệu</div>
+                  <div>Học lại</div>
+                </div>
+            </div>
+          </div>
+        
+          <div class="timeline-row right">
+            <div class="timeline-content flex-column lesson-in-progress">
+              <span class="lesson">Lesson 1</span>
+              <div class="small-desc-subject d-flex align-items-center flex-lg-wrap">
+                <div class="user d-flex align-items-center">
+                  <img src="./assets/teacher-ava.svg" />
+                  <div class="teacher-name">
+                    Serena
+                  </div>
+                </div>
+                <div class="status-subject confirmed">
+                  <img src="./assets/confirmed.svg" />
+                  Đã xác nhận
+                </div>
+                </div>
+                <div class="d-flex flex-wrap flex-sm-nowrap align-items-center">
+                  <img src="./assets/clock.svg" />
+                  11:30, Thứ 5 tuần sau
+                </div>
+                <div class="lession-in-progess">
+                  <img class="routine" src="./assets/routine.svg" />
+                  <div class="lession-in-progess-desc">
+                    Do you think that people who fight for animal rights while eating?
+                  </div>
+                  <div class="lession-in-progess-footer">
+                    <div class="d-flex align-content-center gap-1">
+                      <img src="./assets/outline.svg" />
+                      Outline
+                    </div>
+                    <div class="button-start-study">
+                      Vào học
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="timeline-row left locked">
+            <div class="timeline-content flex-column lesson-locked">
+              <img src="./assets/lesson-5.svg" />
+              <span class="lesson">Lesson 1</span>
+              <div>
+                Should same-sex marriages be legalized in Vietnam?
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-row right locked">
+            <div class="timeline-content flex-column lesson-locked">
+              <img src="./assets/lesson-5.svg" />
+              <span class="lesson">Lesson 1</span>
+              <div>
+                Should same-sex marriages be legalized in Vietnam?
+              </div>
+            </div>
+          </div>
+        
+          <div class="timeline-row last">
+            <div class="timeline-content flex-column lesson-last align-items-center last">
+              <img src="./assets/baby.svg" />
+              <div class="over-study d-flex align-items-center flex-column">
+                <div>Tham gia bài kiểm tra để học vượt cấp</div>
+                <div class="button-over">Học vượt</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->

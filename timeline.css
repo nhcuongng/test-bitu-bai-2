@@ -1,0 +1,327 @@
+.timeline {
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5rem;
+  margin: 0 auto 1rem auto;
+  overflow: hidden;
+}
+
+.timeline:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  height: 75px;
+  border-right: 2px dashed #FF6D03;
+  margin-left: -2px;
+}
+
+.timeline-row:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  border-right: 2px dashed #FF6D03;
+  height: 100%;
+  display: block;
+}
+
+.timeline-row.locked:after, .timeline-row.last:after   {
+  border-right: 2px dashed #DDD7D0;
+}
+
+.timeline-row {
+  padding-left: 50%;
+  position: relative;
+}
+.timeline-row .timeline-time {
+  position: absolute;
+  right: 50%;
+  top: 15px;
+  text-align: right;
+  margin-right: 20px;
+  color: #bcd0f7;
+  font-size: 1.5rem;
+}
+.timeline-row .timeline-time small {
+  display: block;
+  font-size: 0.8rem;
+}
+.timeline-row .timeline-content {
+  position: relative;
+  padding: 16px;
+  background: white;
+  -webkit-border-radius: var(--radius-16);
+  -moz-border-radius: var(--radius-16);
+  border-radius: var(--radius-16);
+  display: flex;
+  flex-direction: column;
+}
+.timeline-row .timeline-content:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  height: 16px;
+  width: 16px;
+  /* background: #1a233a; */
+}
+.timeline-row .timeline-content:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -54px;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+  background-repeat: no-repeat;
+}
+
+.timeline-row .timeline-content.lesson-done:before {
+  background-image: url('./assets/confirm-32.svg');
+}
+
+.timeline-row .timeline-content.lesson-in-progress:before {
+  background-color: #FF6D03;
+  border-radius: 100%;
+}
+
+.timeline-row .timeline-content.lesson-locked:before {
+  background-image: url('./assets/locked.svg');
+}
+
+.timeline-row .timeline-content.last:before {
+  right: 50%;
+  transform: translateX(50%);
+  background-image: url('./assets/lock-big.svg');
+}
+
+.timeline-row .timeline-content h4 {
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 150%;
+}
+.timeline-row .timeline-content p {
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+.timeline-row .timeline-content i {
+  font-size: 1.2rem;
+  line-height: 100%;
+  padding: 15px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #272e48;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.timeline-row .timeline-content .thumbs {
+  margin-bottom: 20px;
+  display: flex;
+}
+.timeline-row .timeline-content .thumbs img {
+  margin: 5px;
+  max-width: 60px;
+}
+.timeline-row .timeline-content .badge {
+  color: #ffffff;
+  background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+}
+.timeline-row.right .timeline-content {
+  margin-left: 40px;
+  text-align: left;
+}
+.timeline-row.right .timeline-content:after {
+  left: -8px;
+  right: initial;
+  border-bottom: 0;
+  border-left: 0;
+  transform: rotate(-135deg);
+  background-color: white;
+}
+.timeline-row.right .timeline-content:before {
+  left: -57px;
+  right: initial;
+}
+.timeline-row.left {
+  padding-left: 0;
+  padding-right: 50%;
+}
+.timeline-row.left .timeline-time {
+  right: auto;
+  left: 50%;
+  text-align: left;
+  margin-right: 0;
+  margin-left: 20px;
+}
+.timeline-row.left .timeline-content {
+  margin-right: 40px;
+}
+.timeline-row.left .timeline-content:after {
+  right: -8px;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+.lesson {
+  background-color: #E2E8F0;
+  border-radius: 8px;
+  padding: 4px 6px;
+  width: fit-content;
+}
+
+.lesson-done .img-lesson {
+  width: 90px;
+  height: 90px;
+  background: #FF6D03;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.lesson-detail {
+  gap: 12px;
+}
+
+.lesson-footer {
+  color: #2971F0;
+  border-top: 2px solid #EDF2F7;
+  padding: 8px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.lesson-in-progress {
+  gap: 12px;
+}
+
+.lesson-in-progress .button-start-study {
+  border: 2px solid white;
+  color: white;
+}
+
+.lession-in-progess-footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+
+.lession-in-progess .routine {
+  width: 100%;
+  border-radius: var(--radius-16);
+}
+
+.lession-in-progess {
+  background-color: #DE4C2B;
+  border-radius: var(--radius-16);
+}
+
+.lession-in-progess-desc {
+  padding: 16px;
+  font-size: 21px;
+  color: white;
+}
+
+.lesson-locked {
+  gap: 8px;
+}
+
+.timeline-row.last {
+  padding: 0;
+}
+
+.timeline-row.last {
+  padding: 60px 0;
+}
+
+.timeline-row.last .timeline-content {
+  padding: 60px 0;
+  background-color: #EFE9E1;
+  gap: 12px;
+}
+
+.lesson-last img {
+  width: 230px;
+  height: 179px;
+}
+
+.over-study {
+  padding: 16px;
+  background: white;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+.button-over {
+  padding: 8px 70px;
+  background-color: #FF6D03;
+  border-radius: var(--radius-16);
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .timeline-row {
+    margin-bottom: 20px;
+  }
+
+  .timeline {
+      padding: 15px 0;
+  }
+  .timeline:after {
+      border: 0;
+  }
+  .timeline .timeline-row.left {
+      padding: 0;
+  }
+  .timeline .timeline-row.left .timeline-time {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 0 10px 0;
+  }
+  .timeline .timeline-row.left .timeline-content {
+      margin: 0;
+  }
+  .timeline .timeline-row.left .timeline-content:before {
+      display: none;
+  }
+  .timeline .timeline-row.left .timeline-content:after {
+      display: none;
+  }
+  .timeline .timeline-row.right {
+      padding: 0;
+  }
+  .timeline .timeline-row.right .timeline-time {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 0 10px 0;
+      text-align: left;
+  }
+  .timeline .timeline-row.right .timeline-content {
+      margin: 0;
+  }
+  .timeline .timeline-row.right .timeline-content:before {
+      display: none;
+  }
+  .timeline .timeline-row.right .timeline-content:after {
+      display: none;
+  }
+
+  .timeline-row:after {
+    display: none;
+  }
+
+  .timeline:before {
+    display: none;
+  }
+}

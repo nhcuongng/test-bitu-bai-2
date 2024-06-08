@@ -1,0 +1,93 @@
+.progress-section .breadcrumb-custom {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-8);
+  margin-bottom: var(--sp-16);
+}
+
+.progress-section .head-section {
+  background-color: white;
+  border-radius: var(--radius-16);
+  position: relative;
+}
+
+.progress-section .head-section .img-head {
+  width: 100%;
+}
+
+.beginner-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: 400;
+  top: 0;
+  font-size: .8rem;
+}
+
+.progress-detail {
+  gap: var(--sp-8);
+}
+
+.custom-progress-bar {
+  border: 2px solid #48BB78;
+  border-radius: 4px;
+  align-items: center;
+  gap: 2px;
+  padding: 0 2px;
+  overflow: hidden;
+}
+
+.progress-item {
+  width: 16px;
+  height: 16px;
+  background-color: #48BB78;
+  border-radius: 4px;
+}
+
+.target-text {
+  white-space: nowrap;
+}
+
+.target-study  {
+  gap: var(--sp-16)
+}
+
+.more-detail {
+  white-space: nowrap;
+  color: #2971F0
+}
+
+@media (min-width: 576px) {
+  .beginner-title {
+    top: 2px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .beginner-title {
+    top: 2px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .beginner-title {
+    top: 2px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .progress-section .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .beginner-title {
+    top: 2px;
+    font-size: 32px;
+  }
+}

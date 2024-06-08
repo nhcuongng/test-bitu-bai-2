@@ -1,0 +1,10 @@
+:root {
+  --sp-16: 16px;
+  --sp-8: 8px;
+  --radius-16: 16px;
+}
+
+body {
+  background-color: #F2ECE4;
+color: #1A202C
+}
